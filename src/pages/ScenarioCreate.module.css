@@ -1,0 +1,221 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+body {
+  font-family: 'Pretendard', sans-serif;
+}
+
+.divcontainer {
+  display: flex;
+  justify-content: center; /* 좌우 중앙 정렬 */
+  align-items: center; /* 상하 중앙 정렬 */
+  min-height: 100vh;
+  
+}
+
+.flexcontainer {
+  width: 100%;
+  max-width: 1248px; /* 최대 너비 */
+  height: auto; /* 고정 높이 제거 */
+  min-height: 800px; /* 최소 높이 */
+  margin: 0 auto; /* 가운데 정렬 */
+  display: flex;
+  flex-direction: column;
+}
+
+
+.logoContainer {
+  margin-top: 2.5rem;
+  margin-left: 5rem;
+}
+
+.logoImage {
+  width: 100%;
+  min-width: 50px;
+}
+
+.customcontainer {
+  flex: 1;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-top: 6.375rem;
+  margin-left: 5rem;
+  margin-right: 3rem;
+}
+.customForm{
+  flex: 1;
+  margin-right: 0.8rem;
+}
+.customForm2 {
+  flex: 1;
+  margin-left: 0.8rem;  
+}
+
+.mainImgContainer {
+ 
+}
+
+.mainImage {
+  width: 100%;
+  min-width: 400px;
+  height: auto; /* 비율 유지 */
+}
+.questionImgContainer {
+ 
+}
+
+.questionImage {
+  width: 100%;
+  height: auto; /* 비율 유지 */
+  min-width: 40px;
+}
+
+.customTitle {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.customTitle1{
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.customTitle2 {
+  font-weight: normal;
+  font-size: 1rem;
+  color: #61666B;
+  margin-bottom: 0.5rem;
+}
+
+.customTitle21 {
+  font-weight: normal;
+  font-size: 1rem;
+  color: #61666B;
+  margin-bottom: 2.5rem;
+}
+
+.customTitle3 {
+  font-weight: bold;
+  font-size: 1.125rem;
+   margin-bottom: 0.5rem;
+}
+
+.customTitle31 {
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.customInputContainer {
+  margin-bottom: 1.5rem;
+}
+
+.customInput {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: 1px solid #CFD1D3; 
+  max-width: 410px;
+  padding-left: 1rem; /* 왼쪽 패딩 추가 */
+  outline: none; 
+}
+
+.customInput::placeholder {
+  font-size: 1rem;
+}
+
+.customButton {
+  background-color: #13CDBE; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  cursor: pointer;
+  border-radius: 8px;
+  max-width: 430px;
+}
+
+.customButtonText {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600; /* Semibold 두께 */
+  color: #ffffff;   
+}
+
+
+
+@media (max-width: 768px) {
+.divcontainer {
+  margin: 1rem;
+  }
+  .flexcontainer {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  }
+
+  .logoContainer {
+    margin-left: 0.5rem;
+    margin-top: 1.5rem;
+  }
+  .logoImage {
+    width: 100%;
+    height: auto; /* 비율 유지 */
+    min-width:  50px;
+  }
+
+  .customcontainer {
+    flex-direction: column;
+    padding: 0; /* 패딩 제거 */
+    margin: 00;
+  }
+
+  .mainImgContainer {
+    margin-top: 2rem;
+    width: 100%; /* 전체 너비 사용 */
+    margin-bottom: 0;
+  }
+
+  .mainImage {
+    width: 100%;
+    height: auto; /* 비율 유지 */
+    min-width:  50px;
+  }
+
+  .customForm{
+    width: 100%; /* 전체 너비 사용 */
+    flex-basis: auto; /* 기본 값으로 설정 */
+  }
+  .customForm2 {
+    width: 100%; /* 전체 너비 사용 */
+    flex-basis: auto; /* 기본 값으로 설정 */
+    justify-items: center;
+  }
+  
+  .questionImgContainer {
+  margin-bottom: 0.5rem;
+  }
+  .questionImage{
+   width: 100%;
+   min-width: 40px;
+  }
+  .customTitle {
+    font-size: 2rem;
+    
+  }
+  .customTitle1 {
+    font-size: 2rem;
+  }
+  .customInputContainer{
+    padding-right: 1.25rem;
+  }
+  .customInput{
+     
+    width: 100%;
+
+    border-radius: 10px; /* border-radius 추가 */
+}
+
+  .customButton {
+    width: 100%;
+  }
+}

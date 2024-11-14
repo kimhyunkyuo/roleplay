@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import ScenarioCreate from './pages/ScenarioCreate';
+import PracticeComplete from './pages/PracticeComplete';
+import { Reset } from 'styled-reset'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Reset />  {/* Reset css 적용 */}
+    <Router>
+    <Routes>
+      <Route path="/" element={<ScenarioCreate />} />
+      <Route path="success" element={<PracticeComplete />} />
+      <Route path="*" element={<Navigate to="/" />} /> {/* 잘못된 경로일 경우 메인 페이지로 리디렉션 */}
+    </Routes>
+  </Router>
+  </>
   );
 }
 
 export default App;
+
